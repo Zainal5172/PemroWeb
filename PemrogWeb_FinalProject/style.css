@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #E4C59E;
+    padding: 10px;
+}
+
+.logo {
+    float: left;
+}
+
+.user-links {
+    position: left;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.user-links a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navigation {
+    background-color: rgba(228, 197, 158, 0.6);
+    padding: 10px ;
+    text-align: center;
+}
+
+.navigation a{
+    margin-left: 10px;
+}
+.search-bar {
+    text-align: center;
+    position: flex;
+}
+
+.search-bar input[type="text"] {
+    width: 600px; /* Lebar input searchbar */
+    padding: 10px; /* Padding di dalam input */
+    border: 2px solid #E4C59E; /* Menambahkan border dengan warna #E4C59E */
+    border-radius: 10px; /* Untuk membuat sudut input menjadi melengkung */
+    outline: none; /* Menghilangkan outline saat input aktif */
+}
+.footer {
+    background-color: #E4C59E;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
