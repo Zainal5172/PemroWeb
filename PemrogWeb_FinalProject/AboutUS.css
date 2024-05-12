@@ -1,10 +1,18 @@
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif, 'inter';
+}
+
+body {
+    background: #fff;
+    background-color: #fff;
+    min-height: 200vh;
 }
 
 .header {
+    justify-content: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +26,6 @@ body {
 }
 
 .user-links {
-    position: left;
     top: 0;
     right: 0;
     display: flex;
@@ -31,15 +38,6 @@ body {
     margin-left: 20px;
 }
 
-.navigation {
-    background-color: rgba(228, 197, 158, 0.6);
-    padding: 10px ;
-    text-align: center;
-}
-
-.navigation a{
-    margin-left: 10px;
-}
 .search-bar {
     text-align: center;
     position: flex;
@@ -52,11 +50,68 @@ body {
     border-radius: 10px; /* Untuk membuat sudut input menjadi melengkung */
     outline: none; /* Menghilangkan outline saat input aktif */
 }
-.footer {
-    background-color: #E4C59E;
-    color: #fff;
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url(Images/AboutUS.png);
+    background-size: cover;
+    padding-top: 0;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding: 0px;
+}
+
+.col1{
+    text-align: center;
     padding: 20px;
-    position: fixed;
+    background-color: #E4C59E;
+    opacity: 50%;
+}
+
+.col1 a{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.col1 a:hover{
+    background-color: #f0f0f0;
+}
+
+.content{
+    background-color: #FFF8EF;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.content a{
+    color: #AF8260;
+    margin-left: 10px;
+    font-size: small;
+}
+.content h2{
+    margin: auto;
+    color: #9B9B9B;
+    text-align: center;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragraph{
+    background-color: #fff;
+    font-weight: lighter;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+.footer {
+    background-color: #FFF8EF;
+    color: #333;
+    padding: 20px;
+    position: relative;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -68,8 +123,12 @@ body {
     flex: 1;
 }
 
+.footer-left p{
+    color: #9B9B9B;
+}
+
 .footer-logo img {
-    width: 150px;
+    width: 170px;
     display: block;
     margin-bottom: 10px;
 }
@@ -83,27 +142,31 @@ body {
 .idea-advice,
 .payment-methods {
     align-self: flex-start;
+    margin-top: 90px;
+    margin-left: 50px;
 }
 
 .useful-links,
 .idea-advice{
     display: inline-block;
     margin-right: 30px;
+
 }
 
 .useful-links a,
 .idea-advice a {
-    color: #fff;
+    margin-top: 20px;
+    color: #9B9B9B;
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
 }
 
 .payment-methods {
-    margin-top: 20px;
+    margin-top: 90px;
 }
 
 .payment-methods img {
-    width: 50px;
+    width: 200px;
     margin-right: 10px;
 }
